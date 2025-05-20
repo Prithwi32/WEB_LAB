@@ -1,0 +1,190 @@
+<!-- Design web a page for the department timetable containing a suitable header,
+footer, description of the course codes and titles, faculty name and
+initialises, etc., use href, list tags and add University logo as a background.
+Using table tag and additional features like spanning rows, columns and table
+borders. [Refer: A sample class timetable] -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dept. Timetable - SJCE CSE</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: url("university-logo.png") no-repeat center center fixed;
+        background-size: 200px;
+        padding: 20px;
+      }
+
+      header,
+      footer {
+        background-color: #f5f5f5;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #fff;
+      }
+
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #ddd;
+      }
+
+      .course-info {
+        margin-top: 30px;
+      }
+
+      ul {
+        line-height: 1.8;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING</h1>
+      <h2>Department of Computer Science & Engineering</h2>
+      <p>Timetable - Semester VI, Section D | Room: EV006</p>
+    </header>
+
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>7:30-8:30</th>
+        <th>8:30-9:30</th>
+        <th>9:30-10:30</th>
+        <th>10:30-11:00</th>
+        <th>11:00-11:50</th>
+        <th>11:50-12:40</th>
+        <th>12:40-1:30</th>
+        <th>1:30-2:30</th>
+        <th>2:30-3:30</th>
+        <th>3:30-4:30</th>
+        <th>4:30-5:30</th>
+      </tr>
+      <tr>
+        <td>Mon</td>
+        <td colspan="3"></td>
+        <td
+          rowspan="6"
+          style="
+            writing-mode: vertical-rl;
+            text-align: center;
+            background-color: #f0f0f0;
+          "
+        >
+          <strong>BREAK</strong>
+        </td>
+        <td>OE – II<br />[IS102]<br />/IS HALL</td>
+        <td>22CS630</td>
+        <td>22CS641 /<br />22CS643</td>
+        <td
+          rowspan="6"
+          style="
+            writing-mode: vertical-rl;
+            text-align: center;
+            background-color: #f0f0f0;
+          "
+        >
+          <strong>BREAK</strong>
+        </td>
+        <td>22CS610</td>
+        <td>22CS620</td>
+        <td>22CS630</td>
+      </tr>
+      <tr>
+        <td>Tue</td>
+        <td colspan="3">22CS67L D1, SW Lab 1 / 22CS68L D2, SW Lab 2</td>
+        <td>OE – III<br />[IS102]<br />/IS HALL</td>
+        <td>22CS610</td>
+        <td>22CS641 /<br />22CS643</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Wed</td>
+        <td colspan="3">22CS67L D2<br />SW Lab 1 / 22CS68L D1, SW Lab 2</td>
+        <td>OE – II<br />[IS102]<br />/IS HALL</td>
+        <td>22CS610</td>
+        <td>22CS641 /<br />22CS643</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Thu</td>
+        <td colspan="3"></td>
+        <td>OE – III<br />[IS102]<br />/IS HALL</td>
+        <td colspan="2">22CS630P D2<br />HW Lab</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Fri</td>
+        <td>22CS620</td>
+        <td>22HU612</td>
+        <td>22CS610</td>
+        <td>OE – II<br />[IS102]<br />/IS HALL</td>
+        <td>22CS620</td>
+        <td>22CS630</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Sat</td>
+        <td colspan="2"></td>
+        <td>22HU612</td>
+        <td>OE – III<br />[IS102]<br />/IS HALL</td>
+        <td colspan="2">22CS630P D1<br />HW Lab</td>
+        <td colspan="4"></td>
+      </tr>
+    </table>
+
+    <section class="course-info">
+      <h3>Course Code Descriptions</h3>
+      <ul>
+        <li><strong>22CS610</strong> - Advanced Data Structures</li>
+        <li><strong>22CS620</strong> - Computer Networks</li>
+        <li><strong>22CS630</strong> - Software Engineering</li>
+        <li>
+          <strong>22CS641 / 643</strong> - Electives (Blockchain, AI, etc.)
+        </li>
+        <li><strong>22CS67L / 68L</strong> - Software Lab</li>
+        <li><strong>OE – II / III [IS102]</strong> - Open Electives</li>
+      </ul>
+
+      <p>
+        For full course content, visit:
+        <a href="https://jssstuniv.in/#/Coursedetail?courseid=8" target="_blank"
+          >SJCE CSE Department</a
+        >
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        © 2025 JSS Science and Technology University | Designed by Dept. of CSE
+      </p>
+    </footer>
+  </body>
+</html>

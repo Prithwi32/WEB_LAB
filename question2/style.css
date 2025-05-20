@@ -1,0 +1,79 @@
+/* Container Styles */
+.container {
+  margin: 50px auto;
+  width: 450px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slight hover effect */
+}
+
+/* Form Element Styles */
+input[type="text"], input[type="email"], input[type="submit"], textarea, select {
+  font-size: 14px;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Input & Textarea Focus Effects */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4); /* Soft green glow */
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+  font-size: 14px;
+  background-color: #4CAF50; /* Green background */
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Label Styles */
+label {
+  font-size: 16px;
+  margin-top: 12px;
+  display: block;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Textarea Styles */
+textarea {
+  height: 150px;
+  border: 1px solid #ddd;
+  resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input[type="text"], input[type="email"], input[type="submit"], textarea, select {
+    width: 100%;
+  }
+}

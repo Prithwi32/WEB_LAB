@@ -1,0 +1,73 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5ff;
+    margin: 20px;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    font-size: 24px;
+    background-color: #4A148C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* i. Different Font Styles */
+.font-style-1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: #6A1B9A;
+    font-size: 18px;
+}
+
+.font-style-2 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #2E7D32;
+    font-size: 18px;
+}
+
+/* ii. Background Image with Repeat Control */
+.background {
+    width: 1300px;
+    height: 200px;
+    border: 2px solid #333;
+    background-image: url('logo.png');
+    background-repeat: repeat-x; /* repeat-x, repeat-y, no-repeat, repeat */
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* iii. Link Styles */
+a:link {
+    color: #1E88E5;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6A1B9A;
+}
+
+a:hover {
+    color: #E53935;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #D32F2F;
+}
+
+/* iv. Element Visibility Styling */
+#visibility-demo {
+    font-size: 16px;
+    background-color: #e3f2fd;
+    border-left: 5px solid #2196f3;
+    padding: 10px;
+    margin-top: 10px;
+    transition: visibility 0.3s ease;
+}

@@ -1,0 +1,37 @@
+<!-- a) Develop simple calculator for Addition, Subtraction, Multiplication and
+Division operation using JavaScript.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <label for="input1">Enter Number 1</label>
+        <input type="text" id="input1" placeholder="e.g. 10">
+
+        <label for="input2">Enter Number 2</label>
+        <input type="text" id="input2" placeholder="e.g. 5">
+
+        <div>
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+            <button onclick="mul()">*</button>
+            <button onclick="div()">/</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div>
+            <button onclick="AC()">AC</button>
+            <button onclick="clearValues()">Clear</button>
+        </div>
+    </div>
+</body>
+</html>

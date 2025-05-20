@@ -1,0 +1,150 @@
+<!-- Create your resume using HTML tags also experiment with colors, text 
+(bold, italic and different headings), image, link, size and also other related 
+tags. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prithwi Hegde - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            padding: 30px;
+        }
+        .left {
+            flex: 1.5;
+            background-color: #f0f0f8;
+            padding: 20px;
+        }
+        .right {
+            flex: 3;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        h2 {
+            color: #4A148C;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #6A1B9A;
+        }
+        p, li, address {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+        a {
+            color: #1E88E5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left">
+            <h1>Prithwi Hegde</h1>
+            <p class="italic">A passionate individual with a keen interest in <span class="bold">technology</span> and innovation.</p>
+            <img src="logo.png" alt="Profile Picture">
+            <address>
+                <div class="section">
+                    <span class="bold">Address:</span> 123 Main St, City, Country<br>
+                    <span class="bold">Phone:</span> +123456789<br>
+                    <span class="bold">Email:</span> <a href="mailto:prithwi@tech.com">prithwi@tech.com</a>
+                </div>
+            </address>
+            <div class="section">
+                <span class="bold">GitHub:</span> <a href="https://github.com" target="_blank">https://github.com</a>
+            </div>
+
+            <h2>Skills</h2>
+            <ul>
+                <li><span class="bold">Programming Languages</span>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </li>
+                <li>Web Development</li>
+                <li>Version Control (Git)</li>
+            </ul>
+
+            <h2>Languages</h2>
+            <ul>
+                <li>English (Fluent)</li>
+                <li>Spanish (Intermediate)</li>
+            </ul>
+        </div>
+
+        <!-- Right Content -->
+        <div class="right">
+            <h2>Education</h2>
+            <div class="section">
+                <h3>University Name</h3>
+                <p>Bachelor of Science in <b>Computer Science</b><br>
+                <i>Expected Graduation:</i> 2026<br>
+                CGPA: <span class="bold">9.56</span></p>
+            </div>
+            <div class="section">
+                <h3>College Name</h3>
+                <p>Saraswati PU College<br>
+                Graduated: 2022<br>
+                Percentage: <b>98%</b></p>
+            </div>
+            <div class="section">
+                <h3>School Name</h3>
+                <p>C.VS.K High School<br>
+                Graduated: 2020<br>
+                Percentage: <b>97%</b></p>
+            </div>
+
+            <h2>Projects</h2>
+            <div class="section">
+                <h3>Task Manager App</h3>
+                <p>A <span class="italic">simple web application</span> built using <b>React</b> and <b>Node.js</b> to manage daily tasks efficiently.</p>
+            </div>
+            <div class="section">
+                <h3>E-commerce Website</h3>
+                <p>An interactive shopping platform developed with <b>HTML, CSS, JavaScript, and Firebase</b>. Features include user auth, cart, and payment.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
