@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Student Marks Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Test Marks</h2>
+    <form id="marksForm" onsubmit="return false;">
+      <label for="usn">USN:</label>
+      <input type="text" id="usn" name="usn" /><br />
+
+      <label for="code">Subject Code:</label>
+      <input type="text" id="code" name="code" /><br />
+
+      <label for="marks1">Test 1 Marks:</label>
+      <input type="text" id="marks1" name="marks1" /><br />
+
+      <label for="marks2">Test 2 Marks:</label>
+      <input type="text" id="marks2" name="marks2" /><br />
+
+      <label for="marks3">Test 3 Marks:</label>
+      <input type="text" id="marks3" name="marks3" /><br />
+
+      <button type="button" onclick="validate()">Compute Average</button>
+    </form>
+  </div>
+</body>
+</html>
