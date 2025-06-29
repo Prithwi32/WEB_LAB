@@ -1,1 +1,0 @@
-admin:$2y$10$<your-generated-hash-here>

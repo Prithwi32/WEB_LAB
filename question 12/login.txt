@@ -1,0 +1,4 @@
+admin:<generated_hash_password>
+
+// Example
+admin:$2y$12$1Vy32KPrPnuoGqbZ24cAz.rd/0BQIBSwg4f8NeKTGVLNh4lsS6NNa
